@@ -4,17 +4,24 @@
 
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <style>
-.w3-container{
+.w1-container{
 height:200px;
 min-height:200px;
 max-height:250px;
 width:100%;
 
 }
+.w2-container{
+height:200px;
+min-height:200px;
+max-height:250px;
+width:70%;
+margin-left:220px
+}
 </style>
   </head>
 
-<div class="w3-container w3-blue w3-display-topmiddle">
+<div class="w2-container w3-blue w3-display-topmiddle">
 <h1  class="w3-display-middle"style="text-align:center;">El Rodeo </h1>
   <button class="w3-button w3-blue w3-xlarge w3-hide-large" onclick="w3_open()">&#9776;</button>
 
@@ -25,9 +32,10 @@ width:100%;
   <a href="#" class="w3-bar-item w3-button">Link 2</a>
   <a href="#" class="w3-bar-item w3-button">Link 3</a>
 </div>
-<p class="w3-display-middle">
-Just your typical Landing page :P 
+<div class="w2-container w3-display-middle w3-display-left">
+<p>Just your typical Landing page :P 
   </p>
+  </div>
 <script>
 function w3_open() {
     document.getElementById("mySidebar").style.display = "block";

@@ -34,15 +34,24 @@ margin-left:220px
 
 
 
-<div class="w2-container w3-display-middle w3-display-left ">
-  <h2>Bans</h2>
-  <p></p>
-  <ul id="myTable"class="w3-ul w3-card-4">
+<div class="w3-row w3-cell-middle w2-container w3-display-middle w3-display-left ">
+
+
+
+
+
+  <h2>Bans - Management</h2>
+
+
+
+<h2> Ban Lookup</h2>
+
+  <ul id="banslist"class="w3-row w3-ul w3-card-4">
     <li class="w3-display-container"><input class="w3-input w3-border w3-padding" type="text" placeholder="Search for names.." id="myInput" onkeyup="search()">
 
-    <li class="w3-display-container">Jill <span onclick="this.parentElement.style.display='none'" class="w3-button w3-transparent w3-display-right">&times;</span></li>
+    <li class="w3-display-container"><span>Jill</span> <span onclick="this.parentElement.style.display='none'" class="w3-button w3-transparent w3-display-right">&times;</span></li>
     <li class="w3-display-container"><td><span>Adam</span> <span onclick="this.parentElement.style.display='none'" class="w3-button w3-transparent w3-display-right">&times;</span></li>
-    <li class="w3-display-container"><td>Eve <span onclick="this.parentElement.style.display='none'" class="w3-button w3-transparent w3-display-right">&times;</span></li>
+    <li class="w3-display-container"><td><span>Eve</span> <span onclick="this.parentElement.style.display='none'" class="w3-button w3-transparent w3-display-right">&times;</span></li>
   </ul>
 </div>
 <script>
@@ -59,7 +68,7 @@ function search() {
   var input, filter, table, tr, td, i;
   input = document.getElementById("myInput");
   filter = input.value.toUpperCase();
-  table = document.getElementById("myTable");
+  table = document.getElementById("banslist");
   tr = table.getElementsByTagName("li");
   for (i = 0; i < tr.length; i++) {
     td = tr[i].getElementsByTagName("span")[0];

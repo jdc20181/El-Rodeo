@@ -40,6 +40,11 @@ display:none;
 color:red;
   font-weight: bold;
 }
+.w0-container{
+  margin-bottom: 0px;
+
+}
+
 </style>
   </head>
 
@@ -65,15 +70,16 @@ Login </span></button>
 
 Just your typical Landing page :P 
 </div>
+<!--Start Login Form-->
   <div id="id01" class="w3-modal">
-    <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+    <div class="w0-container w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
   
       <div class="w3-center w3-blue"><br>
         <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-xlarge w3-transparent w3-display-topright" title="Close Modal">×</span>
         <img src="https://cdn.discordapp.com/attachments/339922032273915905/493858129600053268/Header_Logo_100x100.png" alt="Avatar" style="width:30%" class="w3-circle w3-margin-top">
       </div>
 
-      <form class="w3-container w3-blue" action="/authhome">
+      <form class="w0-container w3-container w3-blue" action="/authhome">
         <div class="w3-section w3-blue">
           <label><b>Username</b></label>
           <input class="w3-input w3-border w3-margin-bottom w3-round-xxlarge " type="text" placeholder="Enter Username" name="usrname" required>
@@ -90,6 +96,7 @@ Just your typical Landing page :P
       </div>
 
     </div>
+    <!--End Login Form-->
   </div>
   <script>
 var input = document.getElementById("myInput");

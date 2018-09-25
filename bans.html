@@ -2,6 +2,7 @@
 <head>
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <style>
 .w1-container{
@@ -30,6 +31,15 @@ margin-left:220px
     font-weight: bold;
     
 }
+#text{
+display:none;
+color:red;
+  font-weight: bold;
+}
+.w0-container{
+  margin-bottom: 0px;
+
+}
 </style>
   </head>
 
@@ -41,13 +51,14 @@ margin-left:220px
 <div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left" style="width:200px;" id="mySidebar">
 
   <button class="close-button w3-circle w3-button w3-large w3-hide-large" onclick="w3_close()">&times;</button>
-  <img class="w3-bar-item"src="https://media.discordapp.net/attachments/339922032273915905/480763499832803328/unnamed.png">
+  <img class="w3-bar-item"src="https://cdn.discordapp.com/attachments/339922032273915905/493858129600053268/Header_Logo_100x100.png">
+   <button class="w3-bar-item w3-button w3-large" onclick="document.getElementById('id01').style.display='block'">   <span> <i class="material-icons w3-small">person</i>
+Login </span></button>
   
   <a href="#" class="w3-bar-item w3-button">Link 1</a>
   <a href="#" class="w3-bar-item w3-button">Link 2</a>
   <a href="#" class="w3-bar-item w3-button">Link 3</a>
-    <button class="w3-bar-item w3-button w3-large" onclick="">   <span> <i class="material-icons w3-small">person</i>
-Login </span></button>
+ 
 </div>
 
 
@@ -72,7 +83,7 @@ Login </span></button>
     <li class="w3-display-container"><td><span>Eve</span> <span onclick="this.parentElement.style.display='none'" class="w3-button w3-transparent w3-display-right">&times;</span></li>
   </ul>
 </div>
-  <!--Start Login Form-->
+<!--Start Login Form-->
   <div id="id01" class="w3-modal">
     <div class="w0-container w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
   
@@ -99,6 +110,18 @@ Login </span></button>
 
     </div>
     <!--End Login Form-->
+      <script>
+var input = document.getElementById("myInput");
+var text = document.getElementById("text");
+input.addEventListener("keyup", function(event) {
+
+if (event.getModifierState("CapsLock")) {
+    text.style.display = "block";
+  } else {
+    text.style.display = "none"
+  }
+});
+</script>
 <script>
 function w3_open() {
     document.getElementById("mySidebar").style.display = "block";
